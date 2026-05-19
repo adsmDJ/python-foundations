@@ -4,8 +4,8 @@ print("1. Milliamps to Amps")
 print("2. Kilo-ohms to Ohms")
 print("3. Millivolts to Volts")
 print("4. Microfarads to Farads")
-
-choice = input("Choose a conversion from 1 to 4: ")
+print("5. volts to millivolts")
+choice = input("Choose a conversion from 1 to 5: ")
 
 if choice == "1":
     milliamps = float(input("Enter milliamps: "))
@@ -27,5 +27,11 @@ elif choice == "4":
     farads = microfarads / 1_000_000
     print(f"{microfarads} µF = {farads} F")
 
+elif choice == "5":
+    volts = float(input("Enter volts: "))
+    millivolts = volts * 1000
+    print(f"{volts} V = {Millivolts} mV")
+
 else:
-    print("Invalid choice. Please run the program again and choose 1, 2, 3, or 4.")
+    print("Invalid choice. Please run the program again and choose 1, 2, 3, 4, or 5.")
+    
